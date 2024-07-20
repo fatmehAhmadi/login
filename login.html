@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>log in</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="login">
+        <form>
+          <div class="head">فرم ورود</div>
+          <div class="contain">
+            <div class="image-container">
+              <img
+                src="https://www.nicepng.com/png/detail/501-5010656_my-account-comments-my-account-icon-vector.png"
+                alt="user"
+                class="userpic"
+              />
+            </div>
+            <input
+              type="email"
+              class="form-control rounded-pill"
+              placeholder="کدملی"
+              onfocus="clearPlaceholder(this)"
+              onblur="restorePlaceholder(this)"
+            />
+
+            <input
+              type="text"
+              class="form-control rounded-pill"
+              placeholder="شماره موبایل"
+              onfocus="clearPlaceholder(this)"
+              onblur="restorePlaceholder2(this)"
+            />
+            <input
+              type="submit"
+              class="btn btn-danger rounded-pill enterbtn"
+              value="ورود"
+            />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
